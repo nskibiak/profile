@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url('https://unpkg.com/nes.css@latest/css/nes.min.css');
+
+body {
+  background-image: url(images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+  padding-top: 2vh;
+}
+
+.container {
+  width: 50%;
+  margin: 5vh auto;
+}
+
+.neon-name {
+  font-family: 'Bungee Outline';
+  font-size: 10vh;
+  font-weight: bold;
+  color: #ff00fd;
+  text-shadow: 0 0 20px #ff00fd;
+  text-align: center;
+}
+
+.game {
+  width: 240px;
+  height: 180px;
+  position: relative;
+  box-shadow: inset 0 0 3px #000;
+  border-radius: 5px;
+  border: 1px solid #00FF66;
+  overflow: hidden;
+  margin: 5vh auto 5vh auto;
+}
+
+.bounce {
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+  -moz-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+  -o-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+  animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+}
+
+.screen {
+/*  position: relative;*/
+  width: 75%;
+  margin: auto;
+  padding: 1vw;
+  color: #00FF66;
+  background: #000;
+  border: 2px solid;
+  border-radius: 5px;
+  margin: 5vh auto 5vh auto
+}
+
+.screen-text {
+/*  position: relative;*/
+  font-family: 'Inconsolata', monospace;
+  font-size: 2vh;
+}
+
+.blinking-cursor {
+  background: #00FF66;
+  display: inline-block;
+  -webkit-animation: blink 0.8s infinite;
+  width: .5em;
+  height: .75em;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+
+.neon-more {
+  display: inline-block;
+  font-family: 'Bungee Outline';
+  font-size: 5vh;
+  font-weight: bold;
+  color: #7DF9FF;
+  text-shadow: 0 0 20px #7DF9FF;
+  vertical-align: middle;
+}
+
+.footer-content {
+  justify-content: center;
+  text-align: center;
+}
+
+@-webkit-keyframes blink {
+  0% {background: #222}
+  50% {background: #00FF66}
+  100% {background: #222}
+}
+
+@-webkit-keyframes moveX {
+  from { left: 0; } to { left: 165px; }
+}
+@-moz-keyframes moveX {
+  from { left: 0; } to { left: 165px; }
+}
+@-o-keyframes moveX {
+  from { left: 0; } to { left: 165px; }
+}
+@keyframes moveX {
+  from { left: 0; } to { left: 165px; }
+}
+@-webkit-keyframes moveY {
+  from { top: 0; } to { top: 105px; }
+}
+@-moz-keyframes moveY {
+  from { top: 0; } to { top: 105px; }
+}
+@-o-keyframes moveY {
+  from { top: 0; } to { top: 105px; }
+}
+@keyframes moveY {
+  from { top: 0; } to { top: 105px; }
+}
